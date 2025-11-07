@@ -1,96 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexora Tech</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexoraTech — Home</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="nexora.jpeg" alt="Logo Nexora Tech" class="logo-header"> 
-        
-        <h1>Nexora Tech</h1>
-    
+  <header class="site-header">
+    <nav class="nav" aria-label="principal">
+      <a class="logo" href="index.html">NexoraTech</a>
+      <ul class="menu">
+        <li><a aria-current="page" class="active" href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h2>Inclusão Social Através do Sorriso</h2>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="integrantes.html">Quem Somos / Integrantes</a></li> 
-                <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h2>Home</h2>
-        <p>Bem-vindo ao projeto Nexora Tech! Nosso objetivo é ajudar pessoas em situação de vulnerabilidade a terem acesso a tratamentos odontológicos gratuitos, promovendo inclusão social e saúde bucal.</p>
-        <p>Este site faz parte do projeto desenvolvido pelos alunos do 1º TDS.</p>
+  <main id="conteudo">
+    <section class="hero">
+      <h1>Tecnologia a serviço de quem cuida de sorrisos</h1>
+      <p>Sistema e chatbot que organizam informações, reduzem retrabalho e aproximam equipe, dentistas voluntários e pacientes.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="sobre.html">Conheça o projeto</a>
+        <a class="btn btn-outline" href="#como-funciona">Como funciona</a>
+      </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre o Projeto</h2>
-        <p>O projeto Nexora Tech é uma iniciativa social voltada para melhorar a saúde bucal e a qualidade de vida de pessoas em vulnerabilidade. Nossa proposta é criar uma ferramenta digital simples e eficiente para gerenciar os atendimentos realizados pelos dentistas voluntários.</p>
-        <p>Este site foi desenvolvido apenas com HTML e CSS, como parte do desafio proposto na disciplina de Front-End Design Engineering.</p>
+    <section class="problema">
+      <h2>O problema</h2>
+      <p>A comunicação entre equipe, dentistas voluntários e pacientes acontece por canais fragmentados (e-mails, planilhas e mensagens). Isso gera atrasos, informações desencontradas e sobrecarga operacional.</p>
     </section>
 
-    <section id="faq">
-        <h2>Perguntas Frequentes</h2>
-        <p><strong>1. O que é o projeto Nexora Tech?</strong><br>
-        É uma organização sem fins lucrativos que promove atendimento odontológico gratuito.</p>
-
-        <p><strong>2. Quem pode participar?</strong><br>
-        Jovens e mulheres em situação de vulnerabilidade social.</p>
-
-        <p><strong>3. Como posso ajudar?</strong><br>
-        Você pode se tornar voluntário ou fazer doações através dos canais oficiais da Nexora Tech.</p>
+    <section id="como-funciona" class="solucao">
+      <h2>Nossa solução</h2>
+      <ul>
+        <li>Centralização de dados de pacientes e atendimentos</li>
+        <li>Acompanhamento de status (triagem, encaminhamento, tratamento)</li>
+        <li>Chatbot com respostas rápidas e padronizadas</li>
+        <li>Registro de procedimentos e evidências</li>
+      </ul>
+      <p><strong>Resultado esperado:</strong> menos retrabalho, respostas mais rápidas e governança dos dados.</p>
+      <p><a class="btn-link" href="sobre.html#funcionalidades">Ver funcionalidades</a></p>
     </section>
 
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco para saber mais sobre o projeto!</p>
-        <form>
-            <label>Nome:</label><br>
-            <input type="text" placeholder="Seu nome"><br><br>
-            <label>Email:</label><br>
-            <input type="email" placeholder="Seu email"><br><br>
-            <label>Mensagem:</label><br>
-            <textarea rows="5" placeholder="Escreva sua mensagem..."></textarea><br><br>
-            <button type="submit">Enviar</button>
-        </form>
+    <section class="publicos">
+      <h2>Para quem</h2>
+      <div class="cards">
+        <article>
+          <h3>Equipe</h3>
+          <p>Visão unificada e processos padronizados.</p>
+        </article>
+        <article>
+          <h3>Dentistas voluntários</h3>
+          <p>Acesso simples a informações e registro de atendimentos.</p>
+        </article>
+        <article>
+          <h3>Pacientes</h3>
+          <p>Acompanhamento mais ágil e orientações claras.</p>
+        </article>
+      </div>
     </section>
 
-    <section id="integrantes">
-        <h2>Integrantes</h2>
-        <div class="integrantes">
-            <div class="integrante">
-                <img src="andre.HEIC" alt="Foto André Lucats">
-                <h3>André Lucats</h3>
-                <p>RM: 567145</p>
-                <p>Turma: 1TDSPR</p>
-                <a href="https://github.com/alucats">GitHub</a> | <a href="https://www.linkedin.com/in/andre-lucats-913300325/">LinkedIn</a>
-            </div>
-            <div class="integrante">
-                <img src="renan.jpeg" alt="Foto Renan Lima">
-                <h3>Renan Lima</h3>
-                <p>RM: 568321</p> <p>Turma: 1TDSPR</p>
-                <a href="https://github.com/renanlima-hub">GitHub</a> | <a href="https://www.linkedin.com/in/renanlimasantos?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
-            </div>
-            <div class="integrante">
-                <img src="leticia.jpeg" alt="Foto Leticia Andrade">
-                <h3>Leticia Andrade</h3>
-                <p>RM: 567653</p> <p>Turma: 1TDSPR</p>
-                <a href="https://github.com/Laoliveira27">GitHub</a> | <a href="http://www.linkedin.com/in/leticia-andrade-oliveira-">LinkedIn</a>
-            </div>
-        </div>
+    <section class="tecnologia">
+      <h2>Tecnologia</h2>
+      <p>Python • SQLite • IBM Watson Assistant • Node-RED • Telegram Bot • HTML/CSS/JS</p>
     </section>
 
-    <footer>
-        <p>2025 Nexora Tech - Projeto Acadêmico FIAP</p>
-    </footer>
+    <section class="roadmap">
+      <h2>Próximos passos</h2>
+      <ol>
+        <li><strong>Fase 1 (concluída):</strong> suporte interno à equipe</li>
+        <li><strong>Fase 2 (em andamento):</strong> acesso para dentistas voluntários</li>
+        <li><strong>Fase 3 (futuro):</strong> área do paciente</li>
+      </ol>
+      <p><a class="btn-link" href="sobre.html#roadmap">Ver roadmap completo</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© NexoraTech — Projeto acadêmico ADS</small>
+  </footer>
 </body>
 </html>
+

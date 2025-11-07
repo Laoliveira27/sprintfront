@@ -1,34 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página | Nome do Seu Projeto</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexoraTech — Sobre</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="principal">
+      <a class="logo" href="index.html">NexoraTech</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a aria-current="page" class="active" href="sobre.html">Sobre</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>[Nome do Seu Projeto]</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="integrantes.html">Quem Somos / Integrantes</a></li>
-                <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main id="conteudo">
+    <section class="intro">
+      <h1>Sobre o projeto</h1>
+      <p>O <strong>NexoraTech</strong> moderniza a rotina da ONG Turma do Bem ao integrar chatbot e sistema interno. A proposta nasceu da observação de gargalos reais: comunicação difusa, registros manuais e dificuldade em acompanhar o status dos atendimentos.</p>
+    </section>
 
-    <main>
-        <h2>Título do Conteúdo</h2>
-        <p>Este é o local para o texto e as informações da página [Sobre, FAQ, ou Contato].</p>
-    </main>
+    <section id="problema">
+      <h2>O problema que atacamos</h2>
+      <ul>
+        <li>Retrabalho em e-mails e planilhas</li>
+        <li>Falta de padronização de respostas e fluxos</li>
+        <li>Dificuldade em localizar informações-chave</li>
+        <li>Risco de perda de dados operacionais</li>
+      </ul>
+    </section>
 
-    <footer>
-        <p>&copy; 2025 Equipe [Nome da Equipe]. Todos os direitos reservados.</p>
-    </footer>
+    <section id="funcionalidades">
+      <h2>A solução na prática</h2>
+      <ul>
+        <li><strong>Chatbot (Watson/Telegram):</strong> dúvidas frequentes, roteiros e orientações</li>
+        <li><strong>Sistema interno (Python + SQLite):</strong> cadastro, consulta e atualização de dados</li>
+        <li><strong>Fluxos padronizados:</strong> triagem → encaminhamento → atendimento → acompanhamento</li>
+        <li><strong>Relatórios operacionais:</strong> visão de volume e status por etapa</li>
+      </ul>
+    </section>
 
+    <section id="tecnologias">
+      <h2>Tecnologias utilizadas</h2>
+      <p><strong>Back-end:</strong> Python • <strong>Banco:</strong> SQLite • <strong>Assistente virtual:</strong> IBM Watson Assistant • <strong>Orquestração:</strong> Node-RED • <strong>Mensageria:</strong> Telegram Bot • <strong>Front-end:</strong> HTML, CSS, JavaScript</p>
+    </section>
+
+    <section id="roadmap">
+      <h2>Roadmap</h2>
+      <ol>
+        <li><strong>Fase 1 — Equipe (concluída):</strong> base de dados, consultas e chatbot interno</li>
+        <li><strong>Fase 2 — Dentistas (em andamento):</strong> registros de atendimento e consultas de prontuário</li>
+        <li><strong>Fase 3 — Pacientes (futuro):</strong> acesso a orientações e status do tratamento</li>
+      </ol>
+    </section>
+
+    <section id="metricas">
+      <h2>Objetivos e métricas</h2>
+      <ul>
+        <li>Reduzir em <strong>30%</strong> o tempo médio de resposta a voluntários</li>
+        <li>Aumentar a <strong>completude</strong> dos dados de atendimento para <strong>95%</strong></li>
+        <li>Diminuir em <strong>50%</strong> o retrabalho por registros duplicados</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© NexoraTech — Projeto acadêmico ADS</small>
+  </footer>
 </body>
 </html>
+

@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página | Nome do Seu Projeto</title>
-    <link rel="stylesheet" href="style.css"> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexoraTech — FAQ</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav" aria-label="principal">
+      <a class="logo" href="index.html">NexoraTech</a>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a aria-current="page" class="active" href="faq.html">FAQ</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="integrantes.html">Integrantes</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <header>
-        <h1>[Nome do Seu Projeto]</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="integrantes.html">Quem Somos / Integrantes</a></li>
-                <li><a href="sobre.html">Sobre o Projeto</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main id="conteudo">
+    <section class="faq">
+      <h1>Perguntas frequentes</h1>
 
-    <main>
-        <h2>Título do Conteúdo</h2>
-        <p>Este é o local para o texto e as informações da página [Sobre, FAQ, ou Contato].</p>
-    </main>
+      <details>
+        <summary>O que é o NexoraTech?</summary>
+        <p>É uma solução acadêmica que integra <strong>chatbot</strong> e <strong>sistema interno</strong> para organizar a comunicação e os dados da ONG Turma do Bem.</p>
+      </details>
 
-    <footer>
-        <p>&copy; 2025 Equipe [Nome da Equipe]. Todos os direitos reservados.</p>
-    </footer>
+      <details>
+        <summary>O chatbot substitui o atendimento humano?</summary>
+        <p>Não. Ele <strong>apoia</strong> a operação com respostas e roteiros padronizados; casos complexos continuam com a equipe.</p>
+      </details>
 
+      <details>
+        <summary>Quem pode acessar o sistema?</summary>
+        <p>Equipe autorizada e dentistas voluntários cadastrados. O acesso é controlado.</p>
+      </details>
+
+      <details>
+        <summary>Onde os dados ficam armazenados?</summary>
+        <p>Em <strong>SQLite</strong>, com controles de acesso e boas práticas de segurança.</p>
+      </details>
+
+      <details>
+        <summary>Posso usar pelo celular?</summary>
+        <p>Sim. Há integração via <strong>Telegram</strong> e interface web responsiva.</p>
+      </details>
+
+      <details>
+        <summary>Dentistas conseguem registrar atendimentos?</summary>
+        <p>Sim (na <strong>Fase 2</strong>): registros, anexos essenciais e atualização de status.</p>
+      </details>
+
+      <details>
+        <summary>Pacientes terão login?</summary>
+        <p>Está no <strong>roadmap (Fase 3)</strong>: portal simplificado para acompanhar orientações e status.</p>
+      </details>
+
+      <details>
+        <summary>Quais benefícios imediatos?</summary>
+        <p>Centralização de informações, padronização de fluxos e redução de retrabalho.</p>
+      </details>
+
+      <details>
+        <summary>Como reporto um problema ou sugestão?</summary>
+        <p>Use o formulário na página <a href="contato.html">Contato</a> ou o e-mail do projeto.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <small>© NexoraTech — Projeto acadêmico ADS</small>
+  </footer>
 </body>
 </html>
+
