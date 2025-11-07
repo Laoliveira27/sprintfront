@@ -1,6 +1,4 @@
-/* ======================================================= */
-/* 1. RESET BÁSICO E ESTILOS GLOBAIS (PALETA NEXORA) */
-/* ======================================================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,11 +18,7 @@ h1, h2, h3 {
     margin-bottom: 15px;
 }
 
-/* ======================================================= */
-/* 2. LAYOUT GLOBAL (HEADER, NAV, FOOTER) - CORES NEXORA */
-/* ======================================================= */
 
-/* --- HEADER e FOOTER --- */
 header {
     background-color: #1A4D9B; /* Primária: Azul Escuro da Nexora */
     color: white;
@@ -43,8 +37,7 @@ footer {
     margin-top: 40px; 
 }
 
-/* --- NAV (Navegação Intuitiva) --- */
-/* O texto permanece branco, mas o hover usará a cor Roxo/Magenta */
+
 nav a {
     text-decoration: none;
     color: white;
@@ -54,28 +47,32 @@ nav a {
 }
 nav a:hover,
 nav a:focus {
-    color: #8A2BE2; /* Ênfase: Roxo/Magenta */
+    color: #8A2BE2; 
 }
 
-/* ======================================================= */
-/* 3. ESTILOS ESPECÍFICOS DA PÁGINA INTEGRANTES */
-/* ======================================================= */
 
-.integrante {
-    text-align: center;
-    padding: 30px;
-    border-bottom: 1px solid #E9ECEF; 
-    margin-bottom: 30px;
-}
-.foto-perfil {
+@media (min-width: 1300px) {
+    
+    
+    .integrante-container { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; /* 3 COLUNAS! */
+        gap: 30px; 
+    }
+
+    .foto-perfil {
+
+    max-width: 100%; 
+    
     border-radius: 50%; 
     width: 150px;
     height: 150px;
     object-fit: cover; 
-    border: 4px solid #8A2BE2; /* Borda da cor de Ênfase (Roxo/Magenta) */
+    border: 4px solid #8A2BE2; 
     margin-bottom: 15px;
 }
-.integrante h3 {
-    color: #1A4D9B; /* Nome do Integrante com a cor Primária */
+    .integrante {
+        border-bottom: none; /* Remove a linha divisória em desktop */
+        padding: 10px;
+    }
 }
-/* ... (Mantenha o restante do CSS inalterado) ... */
