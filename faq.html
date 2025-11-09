@@ -11,6 +11,9 @@
   <header class="site-header">
     <div class="header-wrap">
       <a class="logo" href="index.html">NexoraTech</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
       <nav aria-label="principal">
         <ul class="menu">
           <li><a href="index.html"><i data-lucide="home" data-lucide-size="18"></i><span>Início</span></a></li>
@@ -63,9 +66,11 @@
     <small>© NexoraTech — Projeto acadêmico ADS</small>
   </footer>
 
+  <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo" class="back-to-top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
   <script defer src="https://unpkg.com/lucide@latest"></script>
-  <script>window.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();});</script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-

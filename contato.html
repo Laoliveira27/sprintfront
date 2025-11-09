@@ -11,6 +11,9 @@
   <header class="site-header">
     <div class="header-wrap">
       <a class="logo" href="index.html">NexoraTech</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
       <nav aria-label="principal">
         <ul class="menu">
           <li><a href="index.html"><i data-lucide="home" data-lucide-size="18"></i><span>Início</span></a></li>
@@ -27,8 +30,8 @@
     <section class="section">
       <h1>Entre em contato</h1>
       <div class="contact-list">
-        <p><i data-lucide="mail"></i> <strong>E-mail:</strong> <a href="mailto:nexoratech@fiap.br">nexoratech@fiap.br</a></p>
-        <p><i data-lucide="phone"></i> <strong>Telefone:</strong> (11) 4002-8922/94002-8922</p>
+        <p><i data-lucide="mail"></i> <strong>E-mail:</strong> <a href="mailto:nexoratech@exemplo.com">nexoratech@exemplo.com</a></p>
+        <p><i data-lucide="phone"></i> <strong>Telefone:</strong> (11) 99999-9999</p>
         <p class="muted">Atendimento por telefone de segunda a sexta-feira, das 8h às 16h.</p>
       </div>
     </section>
@@ -38,9 +41,11 @@
     <small>© NexoraTech — Projeto acadêmico ADS</small>
   </footer>
 
+  <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo" class="back-to-top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
   <script defer src="https://unpkg.com/lucide@latest"></script>
-  <script>window.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();});</script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-

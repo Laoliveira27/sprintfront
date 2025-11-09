@@ -11,6 +11,9 @@
   <header class="site-header">
     <div class="header-wrap">
       <a class="logo" href="index.html">NexoraTech</a>
+      <button id="navToggle" class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
       <nav aria-label="principal">
         <ul class="menu">
           <li><a href="index.html"><i data-lucide="home" data-lucide-size="18"></i><span>Início</span></a></li>
@@ -26,11 +29,6 @@
   <main>
     <section class="section">
       <h1>Quem somos</h1>
-
-       <section class="bio-box">
-      <p>Somos três jovens com caminhos distintos, mas movidos pela mesma inquietação: Tecnologia com propósito. Usamos tecnologia como ferramenta para transformar problemas reais em soluções inteligentes. </p>
-    </section>
-
       <div class="integrante-container">
         <section class="integrante">
           <img src="./leticia.jpeg" alt="Foto da Letícia" class="foto-perfil">
@@ -75,7 +73,11 @@
     <small>© NexoraTech — Projeto acadêmico ADS</small>
   </footer>
 
+  <button id="backToTop" aria-label="Voltar ao topo" title="Voltar ao topo" class="back-to-top">
+    <i data-lucide="arrow-up"></i>
+  </button>
+
   <script defer src="https://unpkg.com/lucide@latest"></script>
-  <script>window.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();});</script>
+  <script src="script.js"></script>
 </body>
 </html>
