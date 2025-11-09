@@ -6,35 +6,62 @@
 }
 
 body {
-    background-color: #F8F9FA; /* Secundária (Fundo) */
-    color: #343A40; /* Texto Principal */
+    background-color: #F8F9FA; 
+    color: #343A40; 
     font-family: Arial, sans-serif; 
     line-height: 1.6; 
 }
 
 h1, h2, h3 {
     font-family: Helvetica, sans-serif;
-    color: #1A4D9B; /* Cor Primária: Azul Escuro da Nexora */
+    color: #1A4D9B; 
     margin-bottom: 15px;
 }
 
 
+main {
+    padding: 20px;
+}
+
+
 header {
-    background-color: #1A4D9B; /* Primária: Azul Escuro da Nexora */
+    background-color: #1A4D9B;
     color: white;
-    padding: 20px 0;
-    text-align: center;
+    padding: 15px 5%; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
-header h1 {
-    color: white; /* Garante que o título seja branco no header azul */
+
+.logo-container {
+    
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    width: 100%; 
 }
-footer {
-    background-color: #343A40; /* Fundo escuro */
-    color: #F8F9FA;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 40px; 
+
+.logo-container img {
+    height: 50px; 
+    max-width: 150px; 
+    width: auto;
+    padding: 5px 0; 
+}
+
+nav {
+    width: 100%; 
+}
+nav ul {
+    list-style: none;
+    display: flex; 
+    justify-content: center; 
+    padding: 10px 0;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    margin: 0; 
 }
 
 
@@ -51,19 +78,59 @@ nav a:focus {
 }
 
 
-@media (min-width: 1300px) {
-    
-    
-    .integrante-container { 
-        display: grid; 
-        grid-template-columns: 1fr 1fr 1fr; /* 3 COLUNAS! */
-        gap: 30px; 
-    }
+.hero img {
+    max-width: 280px; /* controla o tamanho do logo */
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+    display: block;
+}
 
-    .foto-perfil {
 
+.hero h1 {
+    font-size: 3em; 
+    margin-bottom: 0;
+    color: #1A4D9B;
+}
+
+.hero h2 {
+    font-size: 1.6em; 
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    color: #343A40;
+}
+
+
+.cta-row {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block; 
+    padding: 10px 20px;
+    margin: 5px 10px; 
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+.btn-primary {
+    background-color: #1A4D9B;
+    color: white;
+    border: 1px solid #1A4D9B;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #1A4D9B;
+    border: 1px solid #1A4D9B;
+}
+
+
+.foto-perfil {
     max-width: 100%; 
-    
     border-radius: 50%; 
     width: 150px;
     height: 150px;
@@ -71,8 +138,93 @@ nav a:focus {
     border: 4px solid #8A2BE2; 
     margin-bottom: 15px;
 }
+
+.integrante {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 1px solid #E9ECEF; 
+    margin-bottom: 30px;
+}
+.integrante h3 {
+    color: #1A4D9B; 
+}
+
+
+
+footer {
+    background-color: #343A40; 
+    color: #F8F9FA;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px; 
+}
+
+
+@media (min-width: 1300px) {
+    
+    
+    header {
+        flex-direction: row; 
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 10px 10%; 
+        flex-wrap: nowrap; 
+    }
+    
+    .logo-container {
+        width: auto; 
+        justify-content: flex-start;
+    }
+
+    .logo-container img {
+        height: 60px; 
+        padding: 0; 
+    }
+    
+    nav {
+        width: auto; 
+    }
+    nav ul {
+        gap: 25px; 
+        justify-content: flex-end; 
+    }
+
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+    
+    
+    .integrante-container { 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 30px; 
+        padding: 20px 0;
+    }
+    
     .integrante {
-        border-bottom: none; /* Remove a linha divisória em desktop */
+        border-bottom: none; 
         padding: 10px;
     }
+    
+    .bio-box {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px 35px;
+    border-radius: 10px;
+    border: 2px solid #8A2BE2; /* Roxo do layout */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.bio-box p {
+    font-weight: bold;
+    color: #343A40;
+}
+
 }
