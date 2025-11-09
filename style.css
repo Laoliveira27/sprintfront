@@ -31,6 +31,7 @@ h1,h2,h3{
 }
 p{margin:8px 0}
 
+
 header.site-header{
   position:fixed; top:0; left:0; right:0; z-index:1000;
   height:var(--header-h);
@@ -44,7 +45,6 @@ header.site-header{
 }
 .logo{color:#fff;font-weight:700;font-size:1.125rem}
 
-
 nav ul.menu{
   list-style:none; display:flex; gap:16px; align-items:center;
 }
@@ -56,17 +56,14 @@ nav ul.menu a:hover, nav ul.menu a:focus{ color:#C8A2FF }
 nav ul.menu a.active { border-bottom: 2px solid #fff; }
 .lucide{ width:18px; height:18px; stroke:currentColor; stroke-width:2 }
 
-
 .nav-toggle{
   background:transparent; border:none; color:#fff; display:inline-flex; align-items:center;
   justify-content:center; width:40px; height:40px; border-radius:8px; cursor:pointer;
 }
 .nav-toggle .lucide{ width:22px; height:22px }
 
-
 main{ padding:24px 5% }
 .section{ max-width:1200px; margin:0 auto 28px; }
-
 
 .hero{
   background:var(--color-surface);
@@ -79,7 +76,6 @@ main{ padding:24px 5% }
 .hero h1{ font-size:clamp(1.8rem, 3.2vw + 1rem, 3rem); margin-bottom:6px }
 .hero h2{ font-size:clamp(1rem, 1.2vw + .9rem, 1.5rem); color:var(--color-text) }
 
-
 .btn{
   display:inline-flex; align-items:center; gap:8px;
   padding:10px 18px; border-radius:10px; font-weight:700;
@@ -89,13 +85,11 @@ main{ padding:24px 5% }
 .btn-outline{ background:transparent; color:var(--color-primary); border:1px solid var(--color-primary) }
 .btn:hover{ opacity:.92 }
 
-
 .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px }
 .cards article{
   background:var(--color-surface); border:1px solid var(--color-border);
   border-radius:var(--radius); padding:16px; text-align:center;
 }
-
 
 .bio-box{
   max-width:900px; margin:24px auto; background:#fff; padding:22px 28px;
@@ -104,7 +98,6 @@ main{ padding:24px 5% }
 }
 .bio-box p{ font-weight:700; color:var(--color-text) }
 
-/* Integrantes */
 .integrante-container{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:24px;
@@ -127,25 +120,20 @@ main{ padding:24px 5% }
 }
 .btn-link.perfil:hover{ background:var(--color-accent); color:#fff }
 
-
 .faq details{
   background:#fff; border:1px solid var(--color-border);
   border-radius:10px; padding:14px 16px; margin-bottom:12px;
 }
 .faq summary{ cursor:pointer; font-weight:700; color:var(--color-primary) }
 
-
 .contact-list p{ display:flex; align-items:center; gap:8px }
 .muted{ color:var(--color-text-muted); font-size:.95rem }
-
 
 .site-footer{
   background:#343A40; color:#F8F9FA; text-align:center; padding:14px 0; margin-top:36px;
 }
 
-
 .site-header.scrolled { box-shadow: 0 4px 12px rgba(0,0,0,.12); }
-
 
 .back-to-top{
   position:fixed; right:20px; bottom:24px; z-index:999;
@@ -157,18 +145,94 @@ main{ padding:24px 5% }
 .back-to-top .lucide{ width:20px; height:20px }
 .back-to-top.show{ opacity:1; pointer-events:auto }
 
-
 @media (max-width: 900px){
-  nav ul.menu{ display:none; position:absolute; top:var(--header-h); left:0; right:0;
-    background:var(--color-primary); padding:12px 5%; flex-direction:column; gap:12px; }
+  nav ul.menu{
+    display:none;
+    position:absolute;
+    top:var(--header-h);
+    left:0; right:0;
+    background:var(--color-primary);
+    padding:12px 5%;
+    flex-direction:column;
+    gap:12px;
+  }
   nav.open ul.menu{ display:flex; }
 }
 @media (min-width: 901px){
   .nav-toggle{ display:none; }
 }
 
+@media (max-width: 600px){
+  :root{ --header-h: 66px; }
+  .header-wrap{ padding: 0 16px; }
+
+  nav.open ul.menu{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    max-height:calc(100vh - var(--header-h));
+    overflow-y:auto;
+  }
+
+  nav ul.menu a{
+    padding:12px 10px;
+    font-size:1rem;
+  }
+
+  h1{ font-size:1.6rem }
+  h2{ font-size:1.05rem }
+  .hero{ padding:20px 16px }
+  main{ padding:20px 16px }
+
+  .cards{ grid-template-columns:1fr }
+  .integrante-container{ grid-template-columns:1fr }
+
+  .back-to-top{ right:14px; bottom:16px }
+  .foto-perfil{ width:120px; height:120px }
+}
+
+@media (min-width: 600px){
+  .cards{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:16px }
+  .integrante-container{ grid-template-columns:repeat(2, minmax(0,1fr)); gap:20px }
+  .hero{ padding:24px 20px }
+}
+
+@media (min-width: 768px){
+  .header-wrap{ padding:0 5% }
+
+  h1{ font-size:2rem }
+  h2{ font-size:1.2rem }
+  .hero h1{ font-size:clamp(2rem, 2.2vw + 1rem, 2.6rem) }
+  .hero h2{ font-size:clamp(1.1rem, 1.1vw + .9rem, 1.35rem) }
+
+  .cards{ grid-template-columns:repeat(3, minmax(0,1fr)); gap:18px }
+  .integrante-container{ grid-template-columns:repeat(3, minmax(0,1fr)) }
+
+  .btn{ padding:11px 20px }
+}
+@media (min-width: 992px){
+  main{ padding:28px 6% }
+
+  nav ul.menu{
+    overflow:visible;
+    gap:18px;
+    padding:0;
+  }
+
+  .cards article{ padding:18px }
+  .bio-box{ max-width:1000px }
+  .foto-perfil{ width:160px; height:160px }
+}
 
 @media (min-width: 1300px){
-  .header-wrap{ padding:0 10% }
+  .header-wrap{ padding:0 10%; max-width:1280px }
   main{ padding:32px 10% }
+  .section{ max-width:1200px }
+
+  .cards{ gap:20px }
+  .integrante-container{ gap:24px }
+
+  h1{ font-size:2.4rem }
+  h2{ font-size:1.3rem }
 }
+

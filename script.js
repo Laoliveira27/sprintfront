@@ -3,9 +3,8 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const $ = (sel, ctx = document) => ctx.querySelector(sel);
+const $  = (sel, ctx = document) => ctx.querySelector(sel);
 const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
-
 
 (() => {
   const here = location.pathname.split('/').pop() || 'index.html';
@@ -15,7 +14,6 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
   });
 })();
 
-
 (() => {
   const header = $('header.site-header');
   if (!header) return;
@@ -23,7 +21,6 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 })();
-
 
 (() => {
   const btn = $('#backToTop');
@@ -37,7 +34,6 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
   btn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 })();
 
-
 (() => {
   const faq = $('.faq');
   if (!faq) return;
@@ -46,5 +42,16 @@ const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
     d.addEventListener('toggle', () => {
       if (d.open) items.forEach(o => { if (o !== d) o.open = false; });
     });
+  });
+})();
+
+(() => {
+  const toggle = $('#navToggle');
+  const nav = document.querySelector('nav');
+  if (!toggle || !nav) return;
+
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
   });
 })();
