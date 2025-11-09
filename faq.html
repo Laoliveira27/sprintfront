@@ -4,28 +4,27 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NexoraTech — FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-wrap">
+      <a class="logo" href="index.html">NexoraTech</a>
+      <nav aria-label="principal">
+        <ul class="menu">
+          <li><a href="index.html"><i data-lucide="home" data-lucide-size="18"></i><span>Início</span></a></li>
+          <li><a href="sobre.html"><i data-lucide="info" data-lucide-size="18"></i><span>Sobre</span></a></li>
+          <li><a href="faq.html"><i data-lucide="help-circle" data-lucide-size="18"></i><span>FAQ</span></a></li>
+          <li><a href="contato.html"><i data-lucide="mail" data-lucide-size="18"></i><span>Contato</span></a></li>
+          <li><a href="integrantes.html"><i data-lucide="users" data-lucide-size="18"></i><span>Integrantes</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <header>
-        <div class="logo-container">
-            <img src="./nexora.jpeg" alt="Logo Nexora TECH"> 
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre o projeto</a></li> 
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-            </ul>
-        </nav>
-    </header>
-
-  <main id="conteudo">
-    <section class="faq">
+  <main>
+    <section class="section faq">
       <h1>Perguntas frequentes</h1>
 
       <details>
@@ -44,11 +43,6 @@
       </details>
 
       <details>
-        <summary>Onde os dados ficam armazenados?</summary>
-        <p>Em <strong>SQLite</strong>, com controles de acesso e boas práticas de segurança.</p>
-      </details>
-
-      <details>
         <summary>Posso usar pelo celular?</summary>
         <p>Sim. Há integração via <strong>Telegram</strong> e interface web responsiva.</p>
       </details>
@@ -62,22 +56,16 @@
         <summary>Pacientes terão login?</summary>
         <p>Está no <strong>roadmap (Fase 3)</strong>: portal simplificado para acompanhar orientações e status.</p>
       </details>
-
-      <details>
-        <summary>Quais benefícios imediatos?</summary>
-        <p>Centralização de informações, padronização de fluxos e redução de retrabalho.</p>
-      </details>
-
-      <details>
-        <summary>Como reporto um problema ou sugestão?</summary>
-        <p>Use o formulário na página <a href="contato.html">Contato</a> ou o e-mail do projeto.</p>
-      </details>
     </section>
   </main>
 
   <footer class="site-footer">
     <small>© NexoraTech — Projeto acadêmico ADS</small>
   </footer>
+
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script>window.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();});</script>
 </body>
 </html>
+
 

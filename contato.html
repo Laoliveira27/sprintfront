@@ -4,40 +4,42 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>NexoraTech — Contato</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <header class="site-header">
+    <div class="header-wrap">
+      <a class="logo" href="index.html">NexoraTech</a>
+      <nav aria-label="principal">
+        <ul class="menu">
+          <li><a href="index.html"><i data-lucide="home" data-lucide-size="18"></i><span>Início</span></a></li>
+          <li><a href="sobre.html"><i data-lucide="info" data-lucide-size="18"></i><span>Sobre</span></a></li>
+          <li><a href="faq.html"><i data-lucide="help-circle" data-lucide-size="18"></i><span>FAQ</span></a></li>
+          <li><a href="contato.html"><i data-lucide="mail" data-lucide-size="18"></i><span>Contato</span></a></li>
+          <li><a href="integrantes.html"><i data-lucide="users" data-lucide-size="18"></i><span>Integrantes</span></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <header>
-        <div class="logo-container">
-            <img src="./nexora.jpeg" alt="Logo Nexora TECH"> 
-        </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre o projeto</a></li> 
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contato.html">Contato</a></li>
-                <li><a href="integrantes.html">Integrantes</a></li>
-            </ul>
-        </nav>
-    </header>
-
-  <main id="conteudo">
-    <section class="contato-intro">
+  <main>
+    <section class="section">
       <h1>Entre em contato</h1>
-      <p>Se você deseja falar com a equipe do projeto NexoraTech, use um dos canais abaixo:</p>
-
-      <p><strong>E-mail:</strong> <a href="mailto:nexoratech@fiap.br">nexoratech@exemplo.com</a></p>
-      <p><strong>Telefone:</strong> (11) 4002-8922</p>
-        <p>Nosso atendimento telefônico funciona de segunda a sexta, das 8h às 16h.</p>
+      <div class="contact-list">
+        <p><i data-lucide="mail"></i> <strong>E-mail:</strong> <a href="mailto:nexoratech@fiap.br">nexoratech@fiap.br</a></p>
+        <p><i data-lucide="phone"></i> <strong>Telefone:</strong> (11) 4002-8922/94002-8922</p>
+        <p class="muted">Atendimento por telefone de segunda a sexta-feira, das 8h às 16h.</p>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <small>© NexoraTech — Projeto acadêmico ADS</small>
   </footer>
+
+  <script defer src="https://unpkg.com/lucide@latest"></script>
+  <script>window.addEventListener('DOMContentLoaded',()=>{lucide.createIcons();});</script>
 </body>
 </html>
 
